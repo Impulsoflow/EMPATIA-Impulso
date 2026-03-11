@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Índice de Empatia - Instituto Impulso</title>
+  <title>Índice de Empatia Social - Instituto Impulso</title>
   
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
@@ -129,7 +129,7 @@
     <!-- ETAPA 3: RESULTADOS E PDF -->
     <div id="result" class="hidden bg-[var(--bg-card)] rounded-2xl shadow-xl overflow-hidden mb-8 border border-[var(--border-card)]">
         <div class="bg-gradient-to-r from-[#0A192F] to-[#1E3A5F] p-8 text-center text-white border-b-2 border-[var(--primary-gold)]">
-            <h2 class="text-3xl font-extrabold mb-2 tracking-wide">Resultado do Seu Índice de Empatia</h2>
+            <h2 class="text-3xl font-extrabold mb-2 tracking-wide">Resultado do Seu Índice de Empatia Social</h2>
             <p class="text-[var(--primary-gold)] text-lg">Instituto Impulso Coaching</p>
         </div>
         
@@ -150,7 +150,7 @@
             </div>
             <!-- SCORE E DIAGNÓSTICO -->
             <div class="text-center mb-10 bg-[#081226] p-8 rounded-xl border border-[var(--border-card)]">
-                <h3 class="text-xl font-bold text-gray-400 mb-2">O seu Índice de Empatia:</h3>
+                <h3 class="text-xl font-bold text-gray-400 mb-2">O seu Índice de Empatia Social:</h3>
                 <div class="flex items-center justify-center gap-3 mb-6">
                     <span id="final-score" class="text-6xl font-extrabold text-[var(--primary-gold)]"></span>
                     <span class="text-2xl text-gray-500 font-medium">/ 64</span>
@@ -424,7 +424,7 @@
         yPdf += 45; 
         // O DIAGNÓSTICO
         doc.setFontSize(14); doc.setFont("helvetica", "bold"); doc.setTextColor(100, 100, 100);
-        doc.text("ÍNDICE DE EMPATIA EMOCIONAL", 20, yPdf); yPdf += 10;
+        doc.text("ÍNDICE DE EMPATIA SOCIAL", 20, yPdf); yPdf += 10;
         
         doc.setFontSize(45); doc.setTextColor(212, 175, 55); // Dourado
         doc.text(`${score}`, 20, yPdf + 5);
